@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery色々てすと1</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"
+	        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+	</script>
+</head>
+<body>
+<p>
+	<input type='text' id='textbox1' value='入力した文字列がアラートでなるよ!'>
+	<input type='button' id='button1' value='OK'>
+</p>
+
+</body>
+</html>
+<script>
+	// https://jquery.keicode.com/basics/jquery-core.php
+	$(document).ready(function() {
+
+		$('#button1').click(function () {
+			// #でidをセレクタとして取得
+			alert($('#textbox1').val());
+		});
+	})
+</script>
